@@ -8,7 +8,9 @@
 [![Build](https://img.shields.io/github/actions/workflow/status/MOD-PROD/tizentube-mod-patches/release.yml?style=for-the-badge&label=build)](https://github.com/MOD-PROD/tizentube-mod-patches/actions)
 [![License](https://img.shields.io/badge/license-GPLv3-blue?style=for-the-badge)](LICENSE)
 
-<img src="branding-src/preview.png" alt="Launcher banner and app icon" width="720">
+<img src="branding-src/banner_master.png" alt="Android TV launcher banner" width="720">
+
+<img src="branding-src/icon_master.png" alt="Application icon" width="240">
 
 </div>
 
@@ -109,13 +111,7 @@ Artwork lives in `patches/src/main/resources/tizentube/branding/`:
 | `icon/mdpi.png` … `icon/xxxhdpi.png` | 80 → 320 px | `@mipmap/ic_app` |
 | `banner/mdpi.png` … `banner/xxxhdpi.png` | 160×90 → 640×360 | `@drawable/app_banner` (320×180 = Android TV reference) |
 
-To change it, replace `branding-src/icon_master.png` (square) and `branding-src/banner_master.png` (16:9), then:
-
-```
-pip install pillow
-python3 branding-src/make_branding.py --no-badge   # use the images as they are
-python3 branding-src/make_branding.py              # add a MOD pill + TizenTube tag
-```
+The bundled PNG files are ready to use at all five Android densities. `branding-src/icon_master.png` and `branding-src/banner_master.png` are the unmodified source images. No generator or MOD badge overlay is used.
 
 The patch reads `android:icon` / `android:banner` from the manifest, so it keeps working if a release renames the resources.
 
@@ -156,7 +152,7 @@ patches/src/main/resources/tizentube/
 ├── branding/   icon + banner, one PNG per density
 └── userscript/ adblock.user.js
 extensions/extension/   Java code added to the APK (userscript injector)
-branding-src/           master images + generator script
+branding-src/           original master images (no generator)
 ```
 
 ## ⚖️ License
