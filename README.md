@@ -60,7 +60,7 @@
 | Patch | Default | Options |
 |---|:---:|---|
 | **Inject Adblocker Userscript** | ✅ | `userscriptFile` — path to your own `.js` (default `/storage/emulated/0/Download/adblock.user.js`). If the file does not exist, the bundled script is used. |
-| **MOD Icon and Banner** | — | `replaceIcon`, `replaceBanner` |
+| **MOD Icon and Banner** | — | `replaceIcon`, `replaceBanner`, `customIconFile` (PNG carré), `customBannerFile` (PNG 16:9) |
 | **Change app name** | — | `appName` — default `YouTube Premium` |
 | **Clone app** | — | `packageName` — default `mod.android.youtube.tv`; `updatePermissions`, `updateProviders` |
 
@@ -97,6 +97,8 @@ Artwork lives in `patches/src/main/resources/tizentube/branding/`:
 |---|---|---|
 | `icon/mdpi.png` … `icon/xxxhdpi.png` | 80 → 320 px | `@mipmap/ic_app` |
 | `banner/mdpi.png` … `banner/xxxhdpi.png` | 160×90 → 640×360 | `@drawable/app_banner` (320×180 = Android TV reference) |
+
+To use custom artwork, enable **MOD Icon and Banner** and enter paths in **Custom icon file** and/or **Custom banner file** (for example `/storage/emulated/0/Download/my-icon.png` and `/storage/emulated/0/Download/my-banner.png`). The paths must be readable by the patching process. Leave a field empty to use the bundled image. Custom icon PNGs must be square; banners must be 16:9. The patch resizes each custom image for the five Android density buckets. An invalid or inaccessible custom file stops patching with an error.
 
 The bundled PNG files are ready to use at all five Android densities. `branding-src/icon_master.png` and `branding-src/banner_master.png` are the unmodified source images. No generator or MOD badge overlay is used.
 
