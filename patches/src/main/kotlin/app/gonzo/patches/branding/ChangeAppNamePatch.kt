@@ -48,8 +48,7 @@ val changeAppNamePatch = resourcePatch(
     }
 
     execute {
-        // A typed \n (backslash + n) in the option becomes a real line break.
-        val newName = appName!!.trim().replace("\\n", "\n")
+        val newName = appName!!.trim()
 
         document("AndroidManifest.xml").use { document ->
             val application = document.getNode("application") as Element
