@@ -22,7 +22,7 @@
 - 🧹 **No sponsored tiles** — promoted videos and the home masthead disappear from feeds and search.
 - ⏩ **Playback speed that sticks** — the speed you pick is kept across videos and restarts.
 - 🎨 **New launcher artwork** — icon *and* Android TV banner replaced (the TV home screen shows the banner).
-- ✏️ **Rename TizenTube** — any name, even on two lines (`YouTube\nPremium`).
+- ✏️ **Rename TizenTube** — a custom single-line name.
 - 👯 **Clone install** — keep the original TizenTube installed next to the modded one.
 
 ## 🎯 Supported apps
@@ -61,10 +61,8 @@
 |---|:---:|---|
 | **Inject Adblocker Userscript** | ✅ | `userscriptFile` — path to your own `.js` (default `/storage/emulated/0/Download/adblock.user.js`). If the file does not exist, the bundled script is used. |
 | **MOD Icon and Banner** | — | `replaceIcon`, `replaceBanner` |
-| **Change app name** | — | `appName` — default `YouTube\nPremium`; `\n` = line break |
+| **Change app name** | — | `appName` — default `YouTube Premium` |
 | **Clone app** | — | `packageName` — default `mod.android.youtube.tv`; `updatePermissions`, `updateProviders` |
-
-> Two-line names depend on the launcher: most phone launchers show two lines, some TV launchers only one.
 
 ## 🚀 Install
 
