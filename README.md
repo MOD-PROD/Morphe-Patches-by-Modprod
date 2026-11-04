@@ -22,7 +22,7 @@
 - 🧹 **No sponsored tiles** — promoted videos and the home masthead disappear from feeds and search.
 - ⏩ **Playback speed that sticks** — the speed you pick is kept across videos and restarts.
 - 🎨 **New launcher artwork** — icon *and* Android TV banner replaced (the TV home screen shows the banner).
-- ✏️ **Rename the app** — any name, even on two lines (`YouTube\nPremium`).
+- ✏️ **Rename TizenTube** — any name, even on two lines (`YouTube\nPremium`).
 - 👯 **Clone install** — keep the original TizenTube installed next to the modded one.
 
 ## 🎯 Supported apps
@@ -30,12 +30,11 @@
 | App | Package | Version |
 |---|---|---|
 | TizenTube Cobalt | `io.gh.reisxd.tizentube.cobalt` | **2.0.3** (single APK: `cobalt-arm.apk` / `cobalt-arm64.apk`) |
-| YouTube | `com.google.android.youtube` | any — *Change app name* only |
 
 ## 📦 Patches
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.4.1](https://github.com/MOD-PROD/tizentube-mod-patches/releases/tag/v1.4.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;5 patches total
+> **[v1.4.1](https://github.com/MOD-PROD/tizentube-mod-patches/releases/tag/v1.4.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
 <details open>
 <summary>📦 TizenTube&nbsp;&nbsp;•&nbsp;&nbsp;4 patches</summary>
 <br>
@@ -51,16 +50,6 @@
 | [Clone app](#clone-app) | Changes the package name so the patched app can be installed next to the original TizenTube. Default package name: mod.android.youtube.tv. | • Package name<br>• Update permissions<br>• Update providers |
 | [Inject Adblocker Userscript](#inject-adblocker-userscript) | Injects a JavaScript userscript into the YouTube TV web app running in Cobalt. The script removes ad placements from InnerTube responses before the app reads them. | • Custom userscript file |
 | [MOD Icon and Banner](#mod-icon-and-banner) | Replaces the app icon and the Android TV launcher banner with YouTube artwork. On Android TV the launcher shows the banner, so both are replaced. | • Replace icon<br>• Replace banner |
-
-</details>
-
-<details open>
-<summary>📦 YouTube&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
-<br>
-
-| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
-|----------|----------------|-----------|
-| [Change app name](#change-app-name) | Changes the app name shown on the launcher and in the app list. | • App name |
 
 </details>
 
@@ -147,7 +136,7 @@ patches/src/main/kotlin/app/gonzo/patches/
 ├── ads/        Inject Adblocker Userscript + fingerprints
 ├── branding/   MOD Icon and Banner, Change app name
 ├── clone/      Clone app
-└── shared/     Compatibility (TizenTube 2.0.3, YouTube)
+└── shared/     Compatibility (TizenTube 2.0.3)
 patches/src/main/resources/tizentube/
 ├── branding/   icon + banner, one PNG per density
 └── userscript/ adblock.user.js
