@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "patches": [
     {
       "name": "Change app name",
@@ -25,36 +25,18 @@
               "description": null
             }
           ]
-        },
-        {
-          "packageName": "com.google.android.youtube",
-          "name": "YouTube",
-          "description": null,
-          "apkFileType": "APK_REQUIRED",
-          "appIconColor": "#FF0033",
-          "signatures": null,
-          "formFactor": "MOBILE",
-          "targets": [
-            {
-              "version": null,
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
         }
       ],
       "options": [
         {
           "key": "appName",
           "title": "App name",
-          "description": "Name shown under the icon / banner. Any text works. Write \\n for a line break, e.g. YouTube\\nPremium.",
+          "description": "Name shown under the icon / banner. Use a single line.",
           "required": true,
           "type": "kotlin.String",
-          "default": "YouTube\\nPremium",
+          "default": "YouTube Premium",
           "values": {
-            "YouTube\\nPremium": "YouTube\\nPremium",
+            "YouTube Premium": "YouTube Premium",
             "YouTube": "YouTube",
             "YouTube MOD": "YouTube MOD",
             "TizenTube MOD": "TizenTube MOD"
@@ -203,6 +185,24 @@
           "required": false,
           "type": "kotlin.Boolean",
           "default": true,
+          "values": null
+        },
+        {
+          "key": "customIconFile",
+          "title": "Custom icon file",
+          "description": "Optional absolute path to a PNG image on the patching device. Leave empty for the bundled icon. Recommended: square PNG, at least 320x320.",
+          "required": false,
+          "type": "kotlin.String",
+          "default": "",
+          "values": null
+        },
+        {
+          "key": "customBannerFile",
+          "title": "Custom banner file",
+          "description": "Optional absolute path to a PNG image on the patching device. Leave empty for the bundled banner. Recommended: 16:9 PNG, at least 640x360.",
+          "required": false,
+          "type": "kotlin.String",
+          "default": "",
           "values": null
         }
       ]

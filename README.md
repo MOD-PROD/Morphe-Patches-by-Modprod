@@ -34,7 +34,7 @@
 ## 📦 Patches
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.4.1](https://github.com/MOD-PROD/tizentube-mod-patches/releases/tag/v1.4.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
+> **[v1.5.0](https://github.com/MOD-PROD/Morphe-Patches-by-Modprod/releases/tag/v1.5.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
 <details open>
 <summary>📦 TizenTube&nbsp;&nbsp;•&nbsp;&nbsp;4 patches</summary>
 <br>
@@ -49,7 +49,7 @@
 | [Change app name](#change-app-name) | Changes the app name shown on the launcher and in the app list. | • App name |
 | [Clone app](#clone-app) | Changes the package name so the patched app can be installed next to the original TizenTube. Default package name: mod.android.youtube.tv. | • Package name<br>• Update permissions<br>• Update providers |
 | [Inject Adblocker Userscript](#inject-adblocker-userscript) | Injects a JavaScript userscript into the YouTube TV web app running in Cobalt. The script removes ad placements from InnerTube responses before the app reads them. | • Custom userscript file |
-| [MOD Icon and Banner](#mod-icon-and-banner) | Replaces the app icon and the Android TV launcher banner with YouTube artwork. On Android TV the launcher shows the banner, so both are replaced. | • Replace icon<br>• Replace banner |
+| [MOD Icon and Banner](#mod-icon-and-banner) | Replaces the app icon and the Android TV launcher banner with YouTube artwork. On Android TV the launcher shows the banner, so both are replaced. | • Replace icon<br>• Replace banner<br>• Custom icon file<br>• Custom banner file |
 
 </details>
 
